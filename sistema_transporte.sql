@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-07-2025 a las 23:58:29
+-- Tiempo de generación: 24-07-2025 a las 00:32:31
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -90,7 +90,7 @@ CREATE TABLE `conductores` (
 INSERT INTO `conductores` (`id`, `nombre`, `licencia`, `estado`, `cedula`) VALUES
 (1, 'Carlos Pérezz', 'C', 0, '0102030405'),
 (2, 'Marta Gómeza', 'B', 1, '1102233445'),
-(3, 'Luis Torres', 'D', 1, '0911223344'),
+(3, 'Luis Torres', 'E', 1, '0911223344'),
 (5, 'David', 'E', 1, '1725564685');
 
 --
@@ -160,7 +160,6 @@ ALTER TABLE `autobuses`
 --
 ALTER TABLE `conductores`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `licencia` (`licencia`),
   ADD UNIQUE KEY `cedula` (`cedula`);
 
 --

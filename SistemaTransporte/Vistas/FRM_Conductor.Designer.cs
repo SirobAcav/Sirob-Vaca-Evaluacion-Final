@@ -193,6 +193,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FRM_Conductor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Conductor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConductores)).EndInit();
             this.ResumeLayout(false);

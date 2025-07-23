@@ -168,6 +168,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FRM_Ruta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Ruta";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRutas)).EndInit();
             this.ResumeLayout(false);

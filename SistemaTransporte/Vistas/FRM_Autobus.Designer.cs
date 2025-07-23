@@ -168,6 +168,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FRM_Autobus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Autobus";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutobuses)).EndInit();
             this.ResumeLayout(false);

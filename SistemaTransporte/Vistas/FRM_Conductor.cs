@@ -46,15 +46,15 @@ namespace SistemaTransporte.Vistas
             string cedula = txtCedula.Text.Trim();
             string licencia = cmbLicencia.SelectedItem?.ToString();
 
-            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(cedula) || string.IsNullOrWhiteSpace(licencia))
-            {
-                MessageBox.Show("Debe completar todos los campos.");
-                return;
-            }
-
             if (!new string[] { "A", "B", "C", "D", "E" }.Contains(licencia))
             {
                 MessageBox.Show("Licencia no válida. Ingrese A, B, C, D o E.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(cedula) || string.IsNullOrWhiteSpace(licencia))
+            {
+                MessageBox.Show("Debe completar todos los campos.");
                 return;
             }
 
@@ -97,15 +97,15 @@ namespace SistemaTransporte.Vistas
             string cedula = txtCedula.Text.Trim();
             string licencia = cmbLicencia.SelectedItem?.ToString();
 
-            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(cedula) || string.IsNullOrWhiteSpace(licencia))
-            {
-                MessageBox.Show("Debe completar todos los campos.");
-                return;
-            }
-
             if (!new string[] { "A", "B", "C", "D", "E" }.Contains(licencia))
             {
                 MessageBox.Show("Licencia no válida.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(cedula) || string.IsNullOrWhiteSpace(licencia))
+            {
+                MessageBox.Show("Debe completar todos los campos.");
                 return;
             }
 
